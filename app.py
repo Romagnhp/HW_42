@@ -15,6 +15,6 @@ def myStyle():
 @obj_Flask.route("/")
 def lounch_Rezume():
     #return render_template("/index.html", name = 'Honcharov Roman', phoneNumber = '099-248-47-98', mail= 'romagnhp@gmail.com')
-    return render_template("/index.html", **myDictionary, back_ground_color = '#000', text_color = '#fff', filename = 'css/style.css', cssPath = myStyle())
+    return render_template("/index.html", **myDictionary, cssPath = myStyle())
 
 obj_Flask.run(debug=True) 
